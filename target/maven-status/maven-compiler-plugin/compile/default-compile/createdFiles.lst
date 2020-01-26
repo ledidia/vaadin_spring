@@ -1,0 +1,15 @@
+org\example\ViewStudent\ViewStudent.class
+org\example\repository\StudentRepository.class
+org\example\repository\InitSpring.class
+org\example\entity\Curs.class
+org\example\Chartt.class
+org\example\entity\Student.class
+org\example\ViewStudent\StudentView.class
+org\example\MyUI.class
+org\example\ViewNote\ViewNoteStudent.class
+org\example\entity\NoteCurs.class
+org\example\MyUI$MyUIServlet.class
+org\example\repository\CursReposirory.class
+org\example\repository\NoteCursRepository.class
+org\example\ViewNote\ViewNoteInterface.class
+org\example\AppConfig.class
