@@ -44,9 +44,16 @@ Navigator navigator;
         });
         student.setStyleName(ValoTheme.BUTTON_LINK);
         student.setStyleName(ValoTheme.MENU_ITEM);
+
+        Button studentNote= new Button("studentNote", e ->{
+            getNavigator().navigateTo("studentNote");
+        });
+        studentNote.setStyleName(ValoTheme.BUTTON_LINK);
+        studentNote.setStyleName(ValoTheme.MENU_ITEM);
+
         Label title= new Label("Menu");
         title.setStyleName(ValoTheme.MENU_TITLE);
-        CssLayout menu = new CssLayout(title ,note, student, chart);
+        CssLayout menu = new CssLayout(title ,note, student, chart, studentNote);
         menu.setStyleName(ValoTheme.MENU_ROOT);
         CssLayout container = new CssLayout();
 
@@ -72,6 +79,7 @@ Navigator navigator;
     navigator.addView("student", StudentView.class);
         navigator.addView("", StudentView.class);
         navigator.addView("chart", Chartt.class);
+        navigator.addView("studentNote",ViewNoteCursStudent.class);
     }
 
     @WebServlet( name = "MyUIServlet", asyncSupported = true, value="/*")
